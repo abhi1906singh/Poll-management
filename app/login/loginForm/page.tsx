@@ -9,9 +9,11 @@ export default  function LoginForm() {
         console.log(e);
     }
 
-  return (
-      <div className="wrapper flex justify-center p-3">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-6">
+    return (
+        <div className="min-h-screen w-full bg-[url('/login.jpg')]
+       bg-cover bg-center bg-no-repeat">
+        <div className="wrapper flex justify-center p-3">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-6 bg-white/15 backdrop-blur-md">
               Signin Form
               <div className="email">
               <label>Enter your email</label>
@@ -23,7 +25,8 @@ export default  function LoginForm() {
               </div>
               <button type="submit" className="button">Submit</button>
           </form>  
-    </div>
+            </div>
+     </div>
   )
 }
 
